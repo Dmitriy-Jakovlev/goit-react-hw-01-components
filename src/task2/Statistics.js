@@ -5,7 +5,7 @@ import styles from './statistics.module.css';
 export default function Statistics({ title, children }) {
   return (
     <section className={styles.statistics}>
-      {title ? <h2 className={styles.title}>{title}</h2> : null}
+      {title && <h2 className={styles.title}>{title}</h2>}
       {children}
     </section>
   );

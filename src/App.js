@@ -12,10 +12,9 @@ import transactions from "./task4/transactions.json";
 const App = () => {
     return (
         <>
-            <Profile {...user}
-            />
+            <Profile {...user}/>
             <Statistics title="Upload stats">
-        <StatsRender stats={statisticalData} />
+            <StatsRender stats={statisticalData} />
             </Statistics>
             <FriendList friends={friends} />
             <TransactionHistory items={transactions} />
